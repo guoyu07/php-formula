@@ -13,7 +13,7 @@ php-fpm:
       - file: php-fpm.conf 
 
 php-fpm.conf:
-  file:
+  file.managed:
     - name: {{ php.fpm_global_conf }}
     - source: salt://php/templates/php-fpm.conf.jinja
     - template: jinja
