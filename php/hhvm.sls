@@ -2,6 +2,7 @@ hhvm-apt-key:
   file.managed:
     - name: /etc/apt/trusted.gpg.d/hhvm.gpg
     - source: http://dl.hhvm.com/conf/hhvm.gpg.key
+    - source_hash: sha256=5caf3a73033b194f59b025ff4de341ddc17ccfa29725278c817756731d4011ef
 
 hhvm-add-key:
   cmd.wait:
